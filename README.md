@@ -1,2 +1,8 @@
-# Manchester_Breakthrough-_Program
-A web app for the Breakthrough Manchester College-Bound Program, enabling event registration, student point tracking, and personalized dashboards. Built with React and Spring Boot, it ensures user-friendly interfaces, secure data handling, and seamless administration.
+# React + Vite
+
+This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+
+Currently, two official plugins are available:
+
+- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
+- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh

@@ -1,0 +1,27 @@
+header {
+    background-color: #f0f0f0;
+    padding: 1rem;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  }
+  
+  nav a {
+    text-decoration: none;
+    color: #007bff;
+    margin: 0 1rem;
+    font-weight: bold;
+  }
+  
+  nav a:hover {
+    color: #0056b3;
+  }
+
+.nav-link {
+  text-decoration: none;
+  color: #007bff;
+  font-weight: normal;
+}
+
+.nav-link-active {
+  color: red;
+  font-weight: bold;
+}
