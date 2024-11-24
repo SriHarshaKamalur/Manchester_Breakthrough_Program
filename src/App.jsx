@@ -22,7 +22,6 @@ const App = () => {
           <Route path="/newsletter" element={<NewsLetter />} />
           <Route path="/resources" element={<Resources />} />
           <Route path="/profile" element={<StudentProfile />} />
-          <Route path="*" element={<h1>404 - Page Not Found</h1>} /> {/* Catch-all for undefined routes */}
         </Routes>
       </main>
     </Router>
