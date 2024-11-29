@@ -1,136 +1,180 @@
 .home-container {
     font-family: Arial, sans-serif;
     color: #333;
-  }
-  
-  /* Carousel Section */
-  .carousel-section {
+}
+
+/* Carousel Section */
+.carousel-section {
     margin: 0 auto;
-    max-width: 1200px;
+    max-width: 1000px;
     text-align: center;
-  }
-  
-  /* Welcome Section */
-  .welcome-section {
+    padding: 20px 0;
+}
+
+.carousel-section img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Welcome Section */
+.welcome-section {
     max-width: 900px;
-    margin: 20px auto;
+    margin: 30px auto;
+    padding: 0 20px;
     text-align: justify;
-    line-height: 1.6;
-  }
-  
-  .welcome-section h1 {
+    line-height: 1.8;
+}
+
+.welcome-section h1 {
     text-align: center;
     color: #0047ab;
     font-weight: bold;
     margin-bottom: 20px;
-  }
-  
-  .welcome-section .link {
+    font-size: 2rem;
+}
+
+.welcome-section p {
+    margin-bottom: 15px;
+    text-indent: 1.5em;
+}
+
+.welcome-section .link {
     color: #0047ab;
     text-decoration: underline;
-  }
-  
-  .welcome-section .highlight-link {
+    font-weight: bold;
+}
+
+.welcome-section .highlight-link {
     color: #ff9900;
     text-decoration: underline;
-  }
-  
-  .welcome-section .signature {
+    font-weight: bold;
+}
+
+.welcome-section .signature {
     text-align: right;
     font-style: italic;
-  }
-  
-  /* YouTube Video Section */
-  .youtube-section {
-    max-width: 1200px;
-    margin: 20px auto;
+    margin-top: 20px;
+}
+
+/* YouTube Video Section */
+.youtube-section {
+    max-width: 900px;
+    margin: 40px auto;
     text-align: center;
-  }
-  
-  .youtube-video {
+    padding: 0 20px;
+}
+
+.youtube-section .youtube-title {
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+.youtube-video {
     width: 100%;
-    height: 500px;
+    height: 450px;
     border: none;
-  }
-  
-  /* Testimonials Section */
-  .testimonials-section {
+    border-radius: 10px;
+}
+
+/* Testimonials Section */
+.testimonials-section {
     background-color: #0047ab;
     color: #fff;
-    padding: 30px 20px;
-  }
-  
-  .testimonial-container {
+    padding: 50px 20px;
+}
+
+.testimonial-container {
     max-width: 900px;
     margin: 0 auto;
     text-align: center;
-  }
-  
-  .testimonial-title {
-    margin-bottom: 20px;
+}
+
+.testimonial-title {
+    margin-bottom: 30px;
     font-size: 1.8rem;
-  }
-  
-  .testimonial-box {
+    font-weight: bold;
+}
+
+.testimonial-box {
     background-color: #0077cc;
-    padding: 20px;
+    padding: 30px;
     border-radius: 10px;
     color: #fff;
-    line-height: 1.6;
-  }
-  
-  .testimonial-author {
-    margin-top: 15px;
+    line-height: 1.8;
+    font-size: 1.1rem;
+}
+
+.testimonial-author {
+    margin-top: 20px;
     text-align: right;
     font-style: italic;
-  }
-  
-  /* Footer Section */
-  .footer {
+    font-size: 1rem;
+}
+
+/* Footer Section */
+.footer {
     background-color: #0047ab;
     color: #fff;
     text-align: center;
-    padding: 20px 10px;
-  }
-  
-  .footer-links {
-    margin-bottom: 20px;
-  }
-  
-  .footer-button {
+    padding: 30px 20px;
+}
+
+.footer-links {
+    margin-bottom: 30px;
+}
+
+.footer-button {
     background-color: #ff9900;
     color: #fff;
-    padding: 10px 20px;
+    padding: 12px 20px;
     margin: 5px;
     border-radius: 5px;
     text-decoration: none;
     font-weight: bold;
-  }
-  
-  .footer-button:hover {
+    transition: background-color 0.3s ease;
+}
+
+.footer-button:hover {
     background-color: #cc7700;
-  }
-  
-  .footer-newsletter {
+}
+
+.footer-newsletter {
     margin-top: 20px;
-  }
-  
-  .newsletter-input {
+}
+
+.footer-newsletter h3 {
+    font-size: 1.2rem;
+    margin-bottom: 10px;
+    color: #fff;
+}
+
+.footer-newsletter p {
+    margin-bottom: 15px;
+    font-size: 1rem;
+}
+
+.newsletter-input {
     padding: 10px;
     width: 250px;
     margin-right: 10px;
-  }
-  
-  .newsletter-button {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.newsletter-button {
     background-color: #ff9900;
     color: #fff;
     padding: 10px 20px;
     border: none;
     border-radius: 5px;
     font-weight: bold;
-  }
-  
-  .newsletter-button:hover {
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-button:hover {
     background-color: #cc7700;
-  }
-  
+}

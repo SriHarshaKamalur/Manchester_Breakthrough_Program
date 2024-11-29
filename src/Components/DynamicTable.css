@@ -1,0 +1,276 @@
+/* General Styles */
+body {
+  background: linear-gradient(to right, #f7f9fc, #ffffff);
+  font-family: 'Arial', sans-serif;
+  margin: 0;
+  padding: 0;
+  color: #333;
+}
+
+/* Container Styles */
+.sixc-container {
+  padding: 20px;
+  background: linear-gradient(to bottom, #f9fafc, #f1f5f9);
+}
+
+/* Section Titles */
+.section-title {
+  font-size: 2rem;
+  font-weight: bold;
+  margin-bottom: 20px;
+  text-align: center;
+  color: #0047ab;
+  text-transform: uppercase;
+}
+
+/* Header Section */
+.header-section {
+  margin-bottom: 20px;
+  text-align: left;
+  padding: 15px;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.header-section .section-title {
+  font-size: 2rem;
+  color: #0047ab;
+  text-align: center;
+}
+
+.header-section .updated-text {
+  font-size: 1.2rem;
+  color: #555;
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.header-section .current-info p {
+  font-size: 1rem;
+  margin: 10px 0;
+  color: #333;
+}
+
+.header-section .current-info ul {
+  margin: 10px 0;
+  padding-left: 20px;
+  list-style: disc;
+}
+
+.header-section .current-info ul li {
+  font-size: 1rem;
+  color: #333;
+}
+
+/* Table Section */
+.table-container {
+  margin: 30px auto;
+  padding: 20px;
+  background-color: #f0f4f8;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow-x: auto; /* Ensure scrollable table on small screens */
+}
+
+.table-container table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+.table-container table th,
+.table-container table td {
+  padding: 15px;
+  text-align: left;
+}
+
+.table-container table tr:hover {
+  background-color: #f1f5f9;
+}
+
+/* Dynamic Table */
+.dynamic-table {
+  width: 100%;
+  border-collapse: collapse;
+  margin: 20px 0;
+}
+
+.dynamic-table th,
+.dynamic-table td {
+  border: 1px solid #ddd;
+  padding: 10px; /* Add consistent padding */
+  text-align: center;
+}
+
+.dynamic-table th {
+  background-color: #4a90e2;
+  color: white;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+
+.dynamic-table th.asc::after {
+  content: " 🔼";
+}
+
+.dynamic-table th.desc::after {
+  content: " 🔽";
+}
+
+.dynamic-table tr:nth-child(even) {
+  background-color: #f2f2f2; /* Light gray for even rows */
+}
+
+.dynamic-table tr:nth-child(odd) {
+  background-color: #e8f0fe; /* Light blue for odd rows */
+}
+
+.dynamic-table tr:hover {
+  background-color: #4682b4; /* Darker blue for hover */
+  color: white; /* White text for better contrast */
+  transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out; /* Smooth transition */
+}
+
+.dynamic-table tr.active-row {
+  background-color: #0047ab !important;
+  color: white;
+}
+
+.hover-row:hover td {
+  font-weight: bold;
+}
+
+/* Search Input */
+.filter-input {
+  display: block;
+  margin: 20px auto;
+  padding: 10px;
+  width: 50%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+}
+
+/* Chart Section */
+.chart-section {
+  margin: 30px 0;
+  padding: 15px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container {
+  margin: 20px 0;
+  padding: 20px;
+  background-color: #f9fafb;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.chart-container h3 {
+  text-align: center;
+  color: #003b8e;
+  font-size: 1.5rem;
+  margin-bottom: 20px;
+}
+
+/* Tooltip for Table Headers */
+.dynamic-table th[data-tooltip] {
+  position: relative;
+}
+
+.dynamic-table th[data-tooltip]::after {
+  content: attr(data-tooltip);
+  position: absolute;
+  bottom: -30px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: rgba(0, 0, 0, 0.7);
+  color: #fff;
+  padding: 5px 10px;
+  border-radius: 4px;
+  white-space: nowrap;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.dynamic-table th:hover[data-tooltip]::after {
+  opacity: 1;
+}
+
+/* Text Section */
+.text-section {
+  background-color: #e8f0fe;
+  padding: 20px;
+  border-radius: 8px;
+  margin-top: 20px;
+}
+
+.text-section h2,
+.text-section p {
+  text-align: justify;
+  font-size: 1.1rem;
+  line-height: 1.6;
+}
+
+/* Leaderboard Section */
+.leaderboard-section {
+  background-color: #f9fafb;
+  padding: 40px;
+}
+
+/* Quick Links Section */
+.quick-links-section {
+  background-color: #blue-500;
+  color: white;
+  padding: 40px;
+}
+
+/* CTA Section */
+.cta-section {
+  background-color: #blue-600;
+  color: white;
+  padding: 8px;
+  border-radius: 8px;
+}
+
+.cta-section h2 {
+  font-size: 1.25rem;
+  font-weight: bold;
+}
+
+.cta-section p {
+  margin-top: 8px;
+}
+
+.cta-section button {
+  background-color: white;
+  color: #blue-600;
+  font-weight: bold;
+  padding: 8px 16px;
+  margin-top: 16px;
+  border-radius: 8px;
+}
+
+hr.my-8 {
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  border-top-width: 2px;
+  border-color: #4a90e2;
+}
+
+/* Responsive Table */
+@media (max-width: 768px) {
+  .dynamic-table {
+    font-size: 0.9rem;
+  }
+
+  .filter-input {
+    width: 90%;
+  }
+
+  .chart-section {
+    padding: 15px;
+  }
+}

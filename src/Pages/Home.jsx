@@ -1,6 +1,6 @@
 import React from "react";
 import Carousel from "../Components/Carousel";
-import "./Home.css"; // Make sure to style the page according to the design
+import "./Home.css"; // Ensure this file exists and styles match the design
 
 const Home = () => {
   return (
@@ -12,53 +12,58 @@ const Home = () => {
 
       {/* Welcome Section */}
       <section className="welcome-section">
-        <h1>WELCOME TO BREAKTHROUGH MANCHESTER AT SNHU</h1>
-        <p>
-          Breakthrough Manchester College-Bound at SNHU (BTM-CB) is a tuition-free program
-          guided by a mission to give continued support in academic growth, educational
-          enrichment, college-readiness, and essential skill-building to highly motivated,
-          under-resourced high school students while inspiring the next generation of
-          well-rounded leaders and educators.
-        </p>
-        <p>
-          BTM-CB continues the college-access pipeline for students who entered the program
-          as rising 7th graders through Breakthrough Manchester at the Derryfield School.
-          BTM-CB seeks to complete its mission through dedicated advising and support of
-          students, college access and success curriculum on eight College-Bound Saturdays,
-          and a college success culture and community.
-        </p>
-        <p>
-          This website is a central hub for everything Breakthrough Manchester
-          College-Bound at SNHU. Whether you are looking to learn more{" "}
-          <a href="#" className="link">
-            about the program
-          </a>
-          , interested in the{" "}
-          <a href="#" className="link">
-            student community
-          </a>
-          , seeking student resources (like{" "}
-          <a href="#" className="link">
-            College Planning
-          </a>
-          ), or{" "}
-          <a href="#" className="link">
-            just making sure that you don’t miss an event
-          </a>
-          , welcome! We’re glad you’re here!
-        </p>
-        <p>
-          If you have any questions, please don’t hesitate to email me at{" "}
-          <a href="mailto:b.gentry@snhu.edu" className="highlight-link">
-            b.gentry@snhu.edu
-          </a>
-          .
-        </p>
-        <p className="signature">— Ben Gentry, BTM-CB at SNHU College-Bound Director</p>
+        <div className="welcome-content">
+          <h1 className="welcome-title">WELCOME TO BREAKTHROUGH MANCHESTER AT SNHU</h1>
+          <p className="welcome-paragraph">
+            Breakthrough Manchester College-Bound at SNHU (BTM-CB) is a tuition-free program
+            guided by a mission to give continued support in academic growth, educational
+            enrichment, college-readiness, and essential skill-building to highly motivated,
+            under-resourced high school students while inspiring the next generation of
+            well-rounded leaders and educators.
+          </p>
+          <p className="welcome-paragraph">
+            BTM-CB continues the college-access pipeline for students who entered the program
+            as rising 7th graders through Breakthrough Manchester at the Derryfield School.
+            BTM-CB seeks to complete its mission through dedicated advising and support of
+            students, college access and success curriculum on eight College-Bound Saturdays,
+            and a college success culture and community.
+          </p>
+          <p className="welcome-paragraph">
+            This website is a central hub for everything Breakthrough Manchester College-Bound
+            at SNHU. Whether you are looking to learn more{" "}
+            <a href="#" className="link">
+              about the program
+            </a>
+            , interested in the{" "}
+            <a href="#" className="link">
+              student community
+            </a>
+            , seeking student resources (like{" "}
+            <a href="#" className="link">
+              College Planning
+            </a>
+            ), or{" "}
+            <a href="#" className="link">
+              just making sure that you don’t miss an event
+            </a>
+            , welcome! We’re glad you’re here!
+          </p>
+          <p className="welcome-paragraph">
+            If you have any questions, please don’t hesitate to email me at{" "}
+            <a href="mailto:b.gentry@snhu.edu" className="highlight-link">
+              b.gentry@snhu.edu
+            </a>
+            .
+          </p>
+          <p className="welcome-signature">
+            — Ben Gentry, BTM-CB at SNHU College-Bound Director
+          </p>
+        </div>
       </section>
 
       {/* YouTube Video Section */}
       <section className="youtube-section">
+        <h2 className="youtube-title">BTM-CB Program Overview</h2>
         <iframe
           className="youtube-video"
           src="https://www.youtube.com/embed/DxxS1wq9sGs"
@@ -74,7 +79,7 @@ const Home = () => {
         <div className="testimonial-container">
           <h2 className="testimonial-title">CB GRADUATE STUDENT TESTIMONIALS</h2>
           <div className="testimonial-box">
-            <p>
+            <p className="testimonial-text">
               BTM-CB, to me, is a place where roadblocks are overcome. At Breakthrough CB,
               what seems impossible becomes possible. Opportunities and relationships are
               built here, and the environment is full of determined students all chasing the
@@ -111,8 +116,8 @@ const Home = () => {
           </a>
         </div>
         <div className="footer-newsletter">
-          <h2>Quick Links:</h2>
-          <p>Subscribe to the Official Breakthrough College-Bound Newsletter!</p>
+          <h3 className="footer-heading">Quick Links:</h3>
+          <p className="footer-text">Subscribe to the Official Breakthrough College-Bound Newsletter!</p>
           <form>
             <input
               type="email"
