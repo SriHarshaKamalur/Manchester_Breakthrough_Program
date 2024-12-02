@@ -1,0 +1,164 @@
+/* Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    font-family: 'Arial', sans-serif;
+    background-color: #f4f4f4;
+    color: #333;
+    line-height: 1.6;
+  }
+  
+  a {
+    text-decoration: none;
+  }
+  
+  h1, h2, h3 {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: #0047ab;
+  }
+  
+  h1 {
+    font-size: 3rem;
+    text-align: center;
+    margin: 40px 0;
+    font-weight: 700;
+  }
+  
+  /* Container for overall resources section */
+  .resources-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+  }
+  
+  /* Section Heading */
+  .resources-section {
+    margin-bottom: 60px;
+  }
+  
+  .resources-section h2 {
+    font-size: 2.2rem;
+    margin-bottom: 20px;
+    border-bottom: 2px solid #0047ab;
+    padding-bottom: 10px;
+    font-weight: 700;
+  }
+  
+  .resources-section p {
+    font-size: 1.1rem;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  /* Card Container Layout */
+  .programs-container,
+  .resources-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+  }
+  
+  /* Individual Card Styles */
+  .program-card,
+  .resource-card {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    text-align: center;
+  }
+  
+  .program-card:hover,
+  .resource-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Logo/Image Styling */
+  .program-logo,
+  .resource-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Card Titles */
+  .program-name,
+  .resource-name {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #0047ab;
+  }
+  
+  /* Links in cards */
+  .program-link,
+  .resource-link {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 12px 30px;
+    background-color: #0047ab;
+    color: white;
+    font-size: 1rem;
+    border-radius: 25px;
+    text-transform: uppercase;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .program-link:hover,
+  .resource-link:hover {
+    background-color: #ff9900;
+  }
+  
+  /* Section Styling for Responsiveness */
+  @media (max-width: 768px) {
+    .programs-container,
+    .resources-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .program-card,
+    .resource-card {
+      padding: 20px;
+    }
+  }
+  
+  /* Subtle Hover Effects */
+  .program-link,
+  .resource-link {
+    transition: all 0.3s ease;
+  }
+  
+  .program-link:hover,
+  .resource-link:hover {
+    transform: scale(1.05);
+  }
+  
+  /* Padding for small screens */
+  @media (max-width: 576px) {
+    .resources-container {
+      padding: 0 10px;
+    }
+  
+    h1 {
+      font-size: 2.5rem;
+    }
+  
+    .program-name,
+    .resource-name {
+      font-size: 1.3rem;
+    }
+  }
+  
+  

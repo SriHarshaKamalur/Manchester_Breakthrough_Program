@@ -70,12 +70,38 @@ const Header = () => {
         >
           Events
         </NavLink>
-        <NavLink
-          to="/resources"
-          className={({ isActive }) => (isActive ? "nav-link active" : "nav-link")}
-        >
-          Resources
-        </NavLink>
+        {/* Modified Resources Dropdown */}
+        <div className="dropdown">
+          <NavLink to="#" className="nav-link">
+            Resources
+          </NavLink>
+          <div className="dropdown-content">
+            <NavLink
+              to="/summer-programs"
+              className={({ isActive }) => (isActive ? "dropdown-item active" : "dropdown-item")}
+            >
+              Summer Programs
+            </NavLink>
+            <NavLink
+              to="/preparing-for-college"
+              className={({ isActive }) => (isActive ? "dropdown-item active" : "dropdown-item")}
+            >
+              Preparing for College
+            </NavLink>
+            <NavLink
+              to="/applying-to-college"
+              className={({ isActive }) => (isActive ? "dropdown-item active" : "dropdown-item")}
+            >
+              Applying to College
+            </NavLink>
+            <NavLink
+              to="/paying-for-college"
+              className={({ isActive }) => (isActive ? "dropdown-item active" : "dropdown-item")}
+            >
+              Paying for College
+            </NavLink>
+            </div>
+        </div>
       </nav>
     </header>
   );

@@ -1,0 +1,108 @@
+/* General Container Styling */
+.summer-programs-container {
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+    font-family: Arial, sans-serif;
+  }
+  
+  h1 {
+    font-size: 2.5rem;
+    color: #0047ab;
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  p {
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #666;
+  }
+  
+  /* Program List Grid Styling */
+  .programs-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    margin-top: 20px;
+  }
+  
+  /* Program Card Styling */
+  .program-card {
+    background-color: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .program-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+  }
+  
+  /* Logo Styling */
+  .program-logo {
+    width: 100px;
+    height: 100px;
+    object-fit: contain;
+    margin-bottom: 15px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Program Name Styling */
+  h3 {
+    font-size: 1.6rem;
+    font-weight: bold;
+    margin-bottom: 10px;
+    color: #0047ab;
+  }
+  
+  /* Link Styling */
+  .program-link {
+    display: inline-block;
+    background-color: #0047ab;
+    color: white;
+    padding: 12px 30px;
+    border-radius: 25px;
+    text-decoration: none;
+    font-weight: bold;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    margin-top: 15px;
+    transition: all 0.3s ease;
+  }
+  
+  .program-link:hover {
+    background-color: #ff9900;
+    transform: scale(1.05);
+  }
+  
+  /* Responsive Design */
+  @media (max-width: 768px) {
+    .programs-list {
+      grid-template-columns: 1fr;
+    }
+  
+    .program-card {
+      padding: 15px;
+    }
+  
+    .program-logo {
+      width: 90px;
+      height: 90px;
+    }
+  
+    h3 {
+      font-size: 1.4rem;
+    }
+  
+    .program-link {
+      padding: 10px 20px;
+      font-size: 1rem;
+    }
+  }
+  
